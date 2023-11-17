@@ -45,22 +45,12 @@ const App = () => {
                 opacity: 0.5,
               },
             },
-            // bubble: {
-            //   distance: 400,
-            //   size: 10,
-            //   duration: 2,
-            //   opacity: {
-            //     value: {
-            //       min: 0.5,
-            //       max: 1,
-            //     },
-            //     animation: {
-            //       enable: true,
-            //       speed: 1,
-            //       sync: false,
-            //     },
-            //   },
-            // },
+            bubble: {
+              distance: 200,
+              duration: 2,
+              opacity: 0.8,
+              size: 20,
+            },
           },
         },
         particles: {
@@ -116,7 +106,7 @@ const App = () => {
             type: 'image',
           },
           size: {
-            value: { min: 5, max: 10 },
+            value: { min: 5, max: 8 },
           },
         },
         preload: [
