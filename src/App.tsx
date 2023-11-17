@@ -45,22 +45,22 @@ const App = () => {
                 opacity: 0.5,
               },
             },
-            bubble: {
-              distance: 400,
-              size: 10,
-              duration: 2,
-              opacity: {
-                value: {
-                  min: 0.5,
-                  max: 1,
-                },
-                animation: {
-                  enable: true,
-                  speed: 1,
-                  sync: false,
-                },
-              },
-            },
+            // bubble: {
+            //   distance: 400,
+            //   size: 10,
+            //   duration: 2,
+            //   opacity: {
+            //     value: {
+            //       min: 0.5,
+            //       max: 1,
+            //     },
+            //     animation: {
+            //       enable: true,
+            //       speed: 1,
+            //       sync: false,
+            //     },
+            //   },
+            // },
           },
         },
         particles: {
@@ -80,9 +80,9 @@ const App = () => {
             outModes: {
               default: 'bounce',
             },
-            random: false,
-            speed: 5,
+            speed: 6,
             straight: false,
+            bounce: true,
           },
           number: {
             density: {
@@ -93,7 +93,7 @@ const App = () => {
           },
           opacity: {
             value: {
-              min: 0.5,
+              min: 1,
               max: 1,
             },
             animation: {
