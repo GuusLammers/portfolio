@@ -12,6 +12,9 @@ export const createMuiTheme = () => {
       background: {
         default: '#000000',
       },
+      text: {
+        primary: '#20c20e',
+      },
     },
   });
 
