@@ -1,7 +1,6 @@
 import { AppBar, Toolbar, Typography, Grid, Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const NavBarDesktop = () => {
   const theme = useTheme();
