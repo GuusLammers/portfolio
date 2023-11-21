@@ -1,9 +1,15 @@
 import { AppBar, Toolbar, Typography, Grid, Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 export const NavBarDesktop = () => {
   const theme = useTheme();
+  const location = useLocation();
+
+  const isProjectsPath = location.pathname.includes('projects');
+  const isExperiencePath = location.pathname.includes('experience');
+  const isRandomPath = location.pathname.includes('random');
 
   return (
     <Grid
@@ -49,6 +55,8 @@ export const NavBarDesktop = () => {
                   borderTopRightRadius: 0,
                   borderBottomLeftRadius: 25,
                   borderBottomRightRadius: 0,
+                  backgroundColor: isProjectsPath ? theme.palette.primary.main : 'transparent',
+                  color: isProjectsPath ? theme.palette.common.black : theme.palette.primary.main,
                 }}
               >
                 <Typography variant="h5" sx={{ paddingLeft: 1 }}>
@@ -76,6 +84,8 @@ export const NavBarDesktop = () => {
                   borderTopRightRadius: 0,
                   borderBottomLeftRadius: 0,
                   borderBottomRightRadius: 0,
+                  backgroundColor: isExperiencePath ? theme.palette.primary.main : 'transparent',
+                  color: isExperiencePath ? theme.palette.common.black : theme.palette.primary.main,
                 }}
               >
                 <Typography variant="h5">Experience</Typography>
@@ -103,6 +113,8 @@ export const NavBarDesktop = () => {
                   borderTopRightRadius: 25,
                   borderBottomLeftRadius: 0,
                   borderBottomRightRadius: 25,
+                  backgroundColor: isRandomPath ? theme.palette.primary.main : 'transparent',
+                  color: isRandomPath ? theme.palette.common.black : theme.palette.primary.main,
                 }}
               >
                 <Typography variant="h5" sx={{ paddingRight: 1 }}>
