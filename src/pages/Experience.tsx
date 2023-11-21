@@ -123,7 +123,7 @@ export const Experience = () => {
             September 2019 - April 2020
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+            <TimelineConnector />
             <TimelineDot color="primary">
               <img
                 src="/verathon-logo.png"
