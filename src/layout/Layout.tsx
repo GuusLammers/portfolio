@@ -2,8 +2,13 @@ import { Grid } from '@mui/material';
 import { ParticlesBackground } from '../components/particles/ParticlesBackground';
 import { NavBarDesktop } from './desktop/NavbarDesktop';
 import { PageContainer } from './PageContainer';
+import { FC, ReactNode } from 'react';
 
-export const Layout = () => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <Grid
       container
@@ -41,7 +46,7 @@ export const Layout = () => {
             height: 'calc(100vh - 108px)',
           }}
         >
-          <PageContainer />
+          <PageContainer>{children}</PageContainer>
         </Grid>
       </div>
       <ParticlesBackground />
