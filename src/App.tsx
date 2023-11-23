@@ -18,11 +18,13 @@ const App = () => {
       </Helmet>
       <Layout>
         <Routes>
-          <Route path="/" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/random" element={<Random />} />
+          <Route index path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/experience" element={<Experience />} />
+          <Route path="/portfolio/random" element={<Random />} />
           <Route path="*" element={<Error404 />} />
+          {/* <Route path="/portfolio/projects/*" element={<Error404 />} />
+          <Route path="/portfolio/experience/*" element={<Error404 />} />
+          <Route path="/portfolio/random/*" element={<Error404 />} /> */}
         </Routes>
       </Layout>
     </ThemeProvider>
