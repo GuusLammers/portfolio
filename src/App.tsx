@@ -7,6 +7,7 @@ import { Projects } from './pages/Projects';
 import { Experience } from './pages/Experience';
 import { Random } from './pages/Random';
 import { Error404 } from './pages/Error404';
+import { About } from './pages/About';
 
 const App = () => {
   const theme = createMuiTheme();
@@ -18,9 +19,15 @@ const App = () => {
       </Helmet>
       <Layout>
         <Routes>
-          <Route index path="/portfolio/projects" element={<Projects />} />
-          <Route path="/portfolio/experience" element={<Experience />} />
-          <Route path="/portfolio/random" element={<Random />} />
+          <Route path="/portfolio">
+            {/* Render the About page */}
+            <Route index element={<About />} />
+            {/* Nested routes for sub-pages */}
+            <Route path="projects" element={<Projects />} />
+            <Route path="experience" element={<Experience />} />
+            <Route path="random" element={<Random />} />
+            {/* Redirect to the About page if no sub-page is specified */}
+          </Route>
           <Route path="*" element={<Error404 />} />
           {/* <Route path="/portfolio/projects/*" element={<Error404 />} />
           <Route path="/portfolio/experience/*" element={<Error404 />} />
