@@ -8,6 +8,7 @@ import { Experience } from './pages/Experience';
 import { Random } from './pages/Random';
 import { Error404 } from './pages/Error404';
 import { About } from './pages/About';
+import { Suspense } from 'react';
 
 const App = () => {
   const theme = createMuiTheme();
@@ -19,7 +20,14 @@ const App = () => {
       </Helmet>
       <Layout>
         <Routes>
-          <Route path="/portfolio" element={<Outlet />}>
+          <Route
+            path="/portfolio"
+            element={
+              <Suspense>
+                <Outlet />
+              </Suspense>
+            }
+          >
             {/* Render the About page */}
             <Route index element={<About />} />
             {/* Nested routes for sub-pages */}
