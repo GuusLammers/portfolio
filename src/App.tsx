@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { createMuiTheme } from './theme';
 import { Helmet } from 'react-helmet';
 import { Layout } from './layout/Layout';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import { Projects } from './pages/Projects';
 import { Experience } from './pages/Experience';
 import { Random } from './pages/Random';
@@ -19,7 +19,7 @@ const App = () => {
       </Helmet>
       <Layout>
         <Routes>
-          <Route path="/portfolio">
+          <Route path="/portfolio" element={<Outlet />}>
             {/* Render the About page */}
             <Route index element={<About />} />
             {/* Nested routes for sub-pages */}
