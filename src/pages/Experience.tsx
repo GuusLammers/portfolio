@@ -29,7 +29,7 @@ export const Experience = () => {
           <TimelineSeparator>
             <TimelineDot color="primary">
               <img
-                src="/ideon-logo.png"
+                src="/portfolio/ideon-logo.png"
                 alt="Food Icon"
                 style={{
                   width: '75px',
@@ -62,7 +62,7 @@ export const Experience = () => {
             <TimelineConnector />
             <TimelineDot color="primary">
               <img
-                src="/tailored-tutors-logo.png"
+                src="/portfolio/tailored-tutors-logo.png"
                 alt="Food Icon"
                 style={{
                   width: '75px',
@@ -94,7 +94,7 @@ export const Experience = () => {
             <TimelineConnector />
             <TimelineDot color="primary">
               <img
-                src="/selkirk-innovates-logo.png"
+                src="/portfolio/selkirk-innovates-logo.png"
                 alt="Food Icon"
                 style={{
                   width: '75px',
@@ -126,7 +126,7 @@ export const Experience = () => {
             <TimelineConnector />
             <TimelineDot color="primary">
               <img
-                src="/verathon-logo.png"
+                src="/portfolio/verathon-logo.png"
                 alt="Food Icon"
                 style={{
                   width: '75px',
