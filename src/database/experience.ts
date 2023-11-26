@@ -1,6 +1,6 @@
 import { TimelineObject } from '../types/timeline';
 
-export const experience: TimelineObject[] = [
+export const EXPERIENCE: TimelineObject[] = [
   {
     title: 'Ideon Technologies',
     jobTitle: 'Software Developer',
@@ -31,7 +31,7 @@ export const experience: TimelineObject[] = [
   {
     title: 'Verathon Medical',
     jobTitle: 'Mechanical Sustaining Engineering Co-op',
-    location: 'Brunaby BC',
+    location: 'Burnaby BC',
     timeRange: 'September 2019 - April 2020',
     image: 'verathon-logo.png',
     externalLink: 'https://www.verathon.com/',

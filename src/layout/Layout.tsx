@@ -22,7 +22,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
     >
       <div
         style={{
-          width: '800px',
+          width: '1000px',
           height: '100%',
           margin: 0,
           zIndex: '1000',

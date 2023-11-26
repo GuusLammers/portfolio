@@ -1,4 +1,4 @@
-import { Box, ListItem, ListItemIcon } from '@mui/material';
+import { Box, ListItem, ListItemIcon, Card } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 import Timeline from '@mui/lab/Timeline';
@@ -10,6 +10,8 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { CustomTimeline } from '../components/CustomTimeline';
+import { EXPERIENCE } from '../database/experience';
 
 export const Experience = () => {
   const theme = useTheme();
@@ -22,7 +24,8 @@ export const Experience = () => {
         color: 'white',
       }}
     >
-      <Timeline position="alternate">
+      <CustomTimeline timelineData={EXPERIENCE} />
+      {/* <Timeline position="alternate">
         <TimelineItem>
           <TimelineOppositeContent sx={{ py: '46px', px: 2 }} variant="body1">
             November 2022 - Current
@@ -50,24 +53,33 @@ export const Experience = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h5">Ideon Technologies</Typography>
-            <ListItem disableGutters>
-              <ListItemIcon
-                sx={{ minWidth: 24, marginRight: 0.25, color: theme.palette.primary.main }}
-              >
-                <LocationOnIcon sx={{ fontSize: 24 }} />
-              </ListItemIcon>
-              <Typography variant="body1">Richmond BC, Hybrid</Typography>
-            </ListItem>
-            <Typography variant="body2">
-              Because you need strength Because you need strength Because you need strength
-            </Typography>
-            <Typography variant="body2">Because you need strength</Typography>
-            <Typography variant="body2">Because you need strength</Typography>
-            <Typography variant="body2">Because you need strength</Typography>
-            <Typography variant="body2">Because you need strength</Typography>
-            <Typography variant="body2">Because you need strength</Typography>
-            <Typography variant="body2">Because you need strength</Typography>
+            <Card
+              sx={{
+                backgroundColor: 'transparent',
+                border: `1px solid ${theme.palette.primary.main}`,
+                padding: 1,
+                color: 'white',
+              }}
+            >
+              <Typography variant="h5">Ideon Technologies</Typography>
+              <ListItem disableGutters>
+                <ListItemIcon
+                  sx={{ minWidth: 24, marginRight: 0.25, color: theme.palette.primary.main }}
+                >
+                  <LocationOnIcon sx={{ fontSize: 24 }} />
+                </ListItemIcon>
+                <Typography variant="body1">Richmond BC, Hybrid</Typography>
+              </ListItem>
+              <Typography variant="body2">
+                Because you need strength Because you need strength Because you need strength
+              </Typography>
+              <Typography variant="body2">Because you need strength</Typography>
+              <Typography variant="body2">Because you need strength</Typography>
+              <Typography variant="body2">Because you need strength</Typography>
+              <Typography variant="body2">Because you need strength</Typography>
+              <Typography variant="body2">Because you need strength</Typography>
+              <Typography variant="body2">Because you need strength</Typography>
+            </Card>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -188,12 +200,12 @@ export const Experience = () => {
                   borderRadius: '50%',
                   objectFit: 'cover',
                 }}
-              /> */}
+              /> 
             </TimelineDot>
           </TimelineSeparator>
           <TimelineContent />
         </TimelineItem>
-      </Timeline>
+      </Timeline> */}
     </Box>
   );
 };
