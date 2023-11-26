@@ -8,7 +8,7 @@ export const NavBarDesktop = () => {
 
   const isProjectsPath = location.pathname.includes('projects');
   const isExperiencePath = location.pathname.includes('experience');
-  const isRandomPath = location.pathname.includes('random');
+  const isAboutPath = location.pathname.includes('about');
 
   return (
     <Grid
@@ -32,7 +32,7 @@ export const NavBarDesktop = () => {
       >
         <Toolbar variant="dense" sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid container sx={{ width: 'auto' }}>
-            <Link to="/portfolio/projects" style={{ textDecoration: 'none' }}>
+            <Link to="/portfolio/about" style={{ textDecoration: 'none' }}>
               <Button
                 component="div"
                 sx={{
@@ -54,12 +54,12 @@ export const NavBarDesktop = () => {
                   borderTopRightRadius: 0,
                   borderBottomLeftRadius: 25,
                   borderBottomRightRadius: 0,
-                  backgroundColor: isProjectsPath ? theme.palette.primary.main : 'transparent',
-                  color: isProjectsPath ? theme.palette.common.black : theme.palette.primary.main,
+                  backgroundColor: isAboutPath ? theme.palette.primary.main : 'transparent',
+                  color: isAboutPath ? theme.palette.common.black : theme.palette.primary.main,
                 }}
               >
                 <Typography variant="h5" sx={{ paddingLeft: 1 }}>
-                  Projects
+                  About
                 </Typography>
               </Button>
             </Link>
@@ -90,7 +90,7 @@ export const NavBarDesktop = () => {
                 <Typography variant="h5">Experience</Typography>
               </Button>
             </Link>
-            <Link to="/portfolio/random" style={{ textDecoration: 'none' }}>
+            <Link to="/portfolio/projects" style={{ textDecoration: 'none' }}>
               <Button
                 component="div"
                 sx={{
@@ -112,12 +112,12 @@ export const NavBarDesktop = () => {
                   borderTopRightRadius: 25,
                   borderBottomLeftRadius: 0,
                   borderBottomRightRadius: 25,
-                  backgroundColor: isRandomPath ? theme.palette.primary.main : 'transparent',
-                  color: isRandomPath ? theme.palette.common.black : theme.palette.primary.main,
+                  backgroundColor: isProjectsPath ? theme.palette.primary.main : 'transparent',
+                  color: isProjectsPath ? theme.palette.common.black : theme.palette.primary.main,
                 }}
               >
                 <Typography variant="h5" sx={{ paddingRight: 1 }}>
-                  Random
+                  Projects
                 </Typography>
               </Button>
             </Link>

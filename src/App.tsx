@@ -22,16 +22,16 @@ const App = () => {
         <Routes>
           <Route
             path="/portfolio"
-            element={
-              <Suspense>
-                <Outlet />
-              </Suspense>
-            }
+            // element={
+            //   <Suspense>
+            //     <Outlet />
+            //   </Suspense>
+            // }
           >
             {/* Render the About page */}
             <Route index element={<About />} />
             {/* Nested routes for sub-pages */}
-            <Route path="projects" element={<Projects />} />
+            <Route path="about" element={<About />} />
             <Route path="experience" element={<Experience />} />
             <Route path="random" element={<Random />} />
             {/* Redirect to the About page if no sub-page is specified */}

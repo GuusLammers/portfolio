@@ -30,7 +30,7 @@ export const EXPERIENCE: TimelineObject[] = [
   },
   {
     title: 'Verathon Medical',
-    jobTitle: 'Mechanical Sustaining Engineering Co-op',
+    jobTitle: 'Mechanical Engineering Co-op',
     location: 'Burnaby BC',
     timeRange: 'September 2019 - April 2020',
     image: 'verathon-logo.png',
