@@ -2,13 +2,11 @@ import { ThemeProvider } from '@mui/material/styles';
 import { createMuiTheme } from './theme';
 import { Helmet } from 'react-helmet';
 import { Layout } from './layout/Layout';
-import { Routes, Route, Outlet } from 'react-router-dom';
-import { Projects } from './pages/Projects';
+import { Routes, Route } from 'react-router-dom';
 import { Experience } from './pages/Experience';
 import { Random } from './pages/Random';
 import { Error404 } from './pages/Error404';
 import { About } from './pages/About';
-import { Suspense } from 'react';
 
 const App = () => {
   const theme = createMuiTheme();
