@@ -12,7 +12,7 @@ export const Error404 = () => {
         justifyContent: 'center',
       }}
     >
-      <GlitchText text="404" />
+      <GlitchText text="404" sizePX={200} />
     </Box>
   );
 };
