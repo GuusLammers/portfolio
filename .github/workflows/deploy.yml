@@ -29,6 +29,9 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Copy index.html to 404.html
+        run: cp ./dist/index.html ./dist/404.html
+
   deploy:
     name: Deploy
     needs: build
