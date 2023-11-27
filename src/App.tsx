@@ -18,26 +18,12 @@ const App = () => {
       </Helmet>
       <Layout>
         <Routes>
-          <Route
-            path="/portfolio"
-            // element={
-            //   <Suspense>
-            //     <Outlet />
-            //   </Suspense>
-            // }
-          >
-            {/* Render the About page */}
-            <Route index element={<About />} />
-            {/* Nested routes for sub-pages */}
+          <Route path="/portfolio">
             <Route path="about" element={<About />} />
             <Route path="experience" element={<Experience />} />
             <Route path="random" element={<Random />} />
-            {/* Redirect to the About page if no sub-page is specified */}
           </Route>
           <Route path="*" element={<Error404 />} />
-          {/* <Route path="/portfolio/projects/*" element={<Error404 />} />
-          <Route path="/portfolio/experience/*" element={<Error404 />} />
-          <Route path="/portfolio/random/*" element={<Error404 />} /> */}
         </Routes>
       </Layout>
     </ThemeProvider>
