@@ -74,30 +74,33 @@ export const CustomTimeline: FC<CustomeTimelineProps> = ({ timelineData }) => {
                   {item.location}
                 </Typography>
               </ListItem>
+              {item.content.listItems && (
+                <div style={{ paddingTop: 10 }}>
+                  {item.content.listItems.map((item, index) => (
+                    <Typography variant="body2" sx={{ textAlign: 'left' }} key={index}>
+                      • {item}
+                    </Typography>
+                  ))}
+                </div>
+              )}
 
-              <Typography variant="body2" sx={{ textAlign: 'left' }}>
-                Because you need strength
-              </Typography>
-              <Typography variant="body2" sx={{ textAlign: 'left' }}>
-                Because you need strength
-              </Typography>
-              <Typography variant="body2" sx={{ textAlign: 'left' }}>
-                Because you need strength
-              </Typography>
-              <Typography variant="body2" sx={{ textAlign: 'left' }}>
-                Because you need strength
-              </Typography>
-              <Typography variant="body2" sx={{ textAlign: 'left' }}>
-                Because you need strength
-              </Typography>
-              <Typography variant="body2" sx={{ textAlign: 'left' }}>
-                Because you need strength
-              </Typography>
+              {item.content.skills && (
+                <div style={{ paddingTop: 10 }}>
+                  <Typography variant="body2" sx={{ textAlign: 'left' }} key={index}>
+                    Skills:{' '}
+                    {item.content.skills.map((skill, index) => (
+                      <>
+                        {skill}
+                        {item.content.skills?.length === index + 1 ? <>.</> : <>, </>}
+                      </>
+                    ))}
+                  </Typography>
+                </div>
+              )}
             </Card>
           </TimelineContent>
         </TimelineItem>
       ))}
-
       <TimelineItem>
         <TimelineOppositeContent />
         <TimelineSeparator>

@@ -11,9 +11,6 @@ export interface TimelineObject {
   timeRange: string;
   image: string;
   externalLink?: string;
+  projectLink?: string;
   content: TimelineContent;
-}
-
-export interface Timeline {
-
 }
