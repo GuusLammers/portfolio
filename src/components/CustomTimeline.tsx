@@ -62,7 +62,7 @@ export const CustomTimeline: FC<CustomeTimelineProps> = ({ timelineData }) => {
                 {item.title}
               </Typography>
               <Typography variant="h6" sx={{ textAlign: 'left' }}>
-                {item.jobTitle}
+                {item.subTitle}
               </Typography>
               <ListItem disableGutters sx={{ p: 0 }}>
                 <ListItemIcon

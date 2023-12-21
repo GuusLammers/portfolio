@@ -6,11 +6,13 @@ export interface TimelineContent {
 
 export interface TimelineObject {
   title: string;
-  jobTitle?: string;
+  subTitle?: string;
   location?: string;
   timeRange: string;
   image: string;
   externalLink?: string;
+  githubLink?: string;
+  githubPagesLink?: string;
   projectLink?: string;
   content: TimelineContent;
 }

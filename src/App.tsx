@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 import { Layout } from './layout/Layout';
 import { Routes, Route } from 'react-router-dom';
 import { Experience } from './pages/Experience';
-import { Random } from './pages/Random';
 import { Error404 } from './pages/Error404';
 import { About } from './pages/About';
+import { Projects } from './pages/Projects';
 
 const App = () => {
   const theme = createMuiTheme();
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/portfolio">
             <Route path="about" element={<About />} />
             <Route path="experience" element={<Experience />} />
-            <Route path="random" element={<Random />} />
+            <Route path="projects" element={<Projects />} />
           </Route>
           <Route path="*" element={<Error404 />} />
         </Routes>

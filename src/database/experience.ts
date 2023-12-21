@@ -3,7 +3,7 @@ import { TimelineObject } from '../types/timeline';
 export const EXPERIENCE: TimelineObject[] = [
   {
     title: 'Ideon Technologies',
-    jobTitle: 'Software Developer',
+    subTitle: 'Software Developer',
     location: 'Richmond BC, Hybrid',
     timeRange: 'November 2022 - Current',
     image: 'ideon-logo.png',
@@ -27,7 +27,7 @@ export const EXPERIENCE: TimelineObject[] = [
   },
   {
     title: 'Tailored Tutors',
-    jobTitle: 'Database Developer',
+    subTitle: 'Database Developer',
     location: 'Remote',
     timeRange: 'Febuary 2022 - April 2022',
     image: 'tailored-tutors-logo.png',
@@ -41,7 +41,7 @@ export const EXPERIENCE: TimelineObject[] = [
   },
   {
     title: 'Selkirk Innovates',
-    jobTitle: 'Software Co-op',
+    subTitle: 'Software Co-op',
     location: 'Remote',
     timeRange: 'January 2021 - April 2022',
     image: 'selkirk-innovates-logo.png',
@@ -67,7 +67,7 @@ export const EXPERIENCE: TimelineObject[] = [
   },
   {
     title: 'Verathon Medical',
-    jobTitle: 'Mechanical Engineering Co-op',
+    subTitle: 'Mechanical Engineering Co-op',
     location: 'Burnaby BC',
     timeRange: 'September 2019 - April 2020',
     image: 'verathon-logo.png',
