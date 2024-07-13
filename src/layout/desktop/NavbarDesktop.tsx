@@ -8,7 +8,7 @@ export const NavBarDesktop = () => {
 
   const isProjectsPath = location.pathname.includes('projects');
   const isExperiencePath = location.pathname.includes('experience');
-  const isAboutPath = location.pathname.includes('about');
+  const isAboutPath = !isProjectsPath && !isExperiencePath;
 
   return (
     <Grid
