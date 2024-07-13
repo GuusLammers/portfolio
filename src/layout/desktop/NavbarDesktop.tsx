@@ -32,7 +32,7 @@ export const NavBarDesktop = () => {
       >
         <Toolbar variant="dense" sx={{ display: 'flex', justifyContent: 'center' }}>
           <Grid container sx={{ width: 'auto' }}>
-            <Link to="/portfolio/about" style={{ textDecoration: 'none' }}>
+            <Link to="/portfolio/" style={{ textDecoration: 'none' }}>
               <Button
                 component="div"
                 sx={{
