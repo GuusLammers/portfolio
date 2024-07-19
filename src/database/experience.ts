@@ -3,21 +3,30 @@ import { TimelineObject } from '../types/timeline';
 export const EXPERIENCE: TimelineObject[] = [
   {
     title: 'Ideon Technologies',
-    subTitle: 'Software Developer',
+    subTitle: 'Intermediate Software Developer',
     location: 'Richmond BC, Hybrid',
     timeRange: 'November 2022 - Current',
     image: 'ideon-logo.png',
     externalLink: 'https://ideon.ai/',
     content: {
+      listItems: [
+        "Developed full-stack features for Ideon's cloud platforms using Azure, Python, FastAPI, TypeScript, React, PostgreSQL, and MongoDB, and implemented RBAC authentication for secure access control.",
+        'Served as ScrumMaster for a team of 10+ people, increasing task completion per sprint from 30% to 80% on average. Responsibilities included facilitating daily scrums, sprint planning, and retrospectives, as well as educating the team on Agile and Scrum methodologies.',
+        "Designed and implemented the entry point to Ideon's data platform using an Azure Function triggered by blob storage uploads from deployed hardware devices. This function efficiently processes uploaded data, seamlessly integrating it into various databases for streamlined data management.",
+        "Contributed to the development of a Full Stack control application using Python, TypeScript, and React, enabling  Ideon's deployment team to efficiently interact with hardware devices through a user-friendly interface in the field.",
+        'Developed a robust data transfer protocol to reliably transmit collected data from remote deployments with poor connectivity to in-office servers at Ideon HQ.',
+      ],
       skills: [
         'Docker',
         'TypeScript',
         'Jira',
-        'Microsoft Azure',
+        'Azure',
         'React.js',
         'Full-Stack Development',
+        'PostgreSQL',
         'MongoDB',
         'Scrum',
+        'Agile',
         'Python',
         'Linux',
         'GitHub',
