@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { TimelineObject } from '../types/timeline';
-import { ListItem, ListItemIcon, Card } from '@mui/material';
+import { ListItem, ListItemIcon, Card, Link } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 import Timeline from '@mui/lab/Timeline';
@@ -12,6 +12,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkIcon from '@mui/icons-material/Link';
 
 interface CustomeTimelineProps {
   timelineData: TimelineObject[];
@@ -64,16 +65,32 @@ export const CustomTimeline: FC<CustomeTimelineProps> = ({ timelineData }) => {
               <Typography variant="h6" sx={{ textAlign: 'left' }}>
                 {item.subTitle}
               </Typography>
-              <ListItem disableGutters sx={{ p: 0 }}>
-                <ListItemIcon
-                  sx={{ minWidth: 20, pl: 0, mr: 0.25, color: theme.palette.primary.main }}
-                >
-                  <LocationOnIcon sx={{ fontSize: 24 }} />
-                </ListItemIcon>
-                <Typography variant="body1" sx={{ textAlign: 'left' }}>
-                  {item.location}
-                </Typography>
-              </ListItem>
+              {item.location && (
+                <ListItem disableGutters sx={{ p: 0 }}>
+                  <ListItemIcon
+                    sx={{ minWidth: 20, pl: 0, mr: 0.25, color: theme.palette.primary.main }}
+                  >
+                    <LocationOnIcon sx={{ fontSize: 24 }} />
+                  </ListItemIcon>
+                  <Typography variant="body1" sx={{ textAlign: 'left' }}>
+                    {item.location}
+                  </Typography>
+                </ListItem>
+              )}
+              {item.githubLink && (
+                <ListItem disableGutters sx={{ p: 0 }}>
+                  <ListItemIcon
+                    sx={{ minWidth: 20, pl: 0, mr: 0.25, color: theme.palette.primary.main }}
+                  >
+                    <LinkIcon sx={{ fontSize: 24 }} />
+                  </ListItemIcon>
+                  <Link href={item.githubLink} underline="none" target="_blank">
+                    <Typography variant="body1" sx={{ textAlign: 'left' }}>
+                      Repository
+                    </Typography>
+                  </Link>
+                </ListItem>
+              )}
               {item.content.listItems && (
                 <div style={{ paddingTop: 10 }}>
                   {item.content.listItems.map((item, index) => (

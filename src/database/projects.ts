@@ -6,6 +6,7 @@ export const PROJECTS: TimelineObject[] = [
     subTitle: 'Pinescript',
     timeRange: 'June 2024',
     image: 'tradingview.png',
+    githubLink: 'https://www.tradingview.com/script/tudpKb9T-GL-Line/',
     content: {
       listItems: [
         'Designed a TradingView indicator for traders to identify market trends across multiple timeframes using moving averages and Average True Range (ATR), featuring customizable parameters, color-coded trend indicators, and a confluence table for clearer decision-making, which I actively use for my crypto trading.',
@@ -17,6 +18,7 @@ export const PROJECTS: TimelineObject[] = [
     subTitle: 'Pinescript',
     timeRange: 'February 2024',
     image: 'tradingview.png',
+    githubLink: 'https://www.tradingview.com/script/ECGRRpkE-GL-Gann-Swing-Indicator/',
     content: {
       listItems: [
         "Designed a TradingView indicator featuring W.D. Gann's Swing Chart principles, bar type filters, visual indicators, break lines, bar count analysis, and customizable moving averages for comprehensive trend analysis and trading strategy optimization, which I actively use for my crypto trading.",
