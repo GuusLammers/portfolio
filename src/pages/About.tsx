@@ -1,4 +1,4 @@
-import { Box, Stack, IconButton, Typography } from '@mui/material';
+import { Box, Stack, IconButton } from '@mui/material';
 import { GlitchText } from '../components/glitch-text/GlitchText';
 import { useTheme } from '@mui/material/styles';
 import GitHubIcon from '@mui/icons-material/GitHub';
