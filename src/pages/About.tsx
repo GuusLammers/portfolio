@@ -59,7 +59,7 @@ export const About = () => {
             <LinkedInIcon fontSize="large" />
           </IconButton>
         </Box>
-        <Typography
+        {/* <Typography
           sx={{
             width: '600px',
             textAlign: 'center',
@@ -81,7 +81,7 @@ export const About = () => {
           golfing. I also design TradingView indicators such as the GL Line Indicator and the GL
           Gann Swing Indicator for crypto trading. Feel free to connect with me on LinkedIn and
           explore my Portfolio and GitHub to see more of my work.
-        </Typography>
+        </Typography> */}
       </Stack>
     </Box>
   );
