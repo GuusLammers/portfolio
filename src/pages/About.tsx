@@ -1,4 +1,4 @@
-import { Box, Stack, IconButton } from '@mui/material';
+import { Box, Stack, IconButton, Typography } from '@mui/material';
 import { GlitchText } from '../components/glitch-text/GlitchText';
 import { useTheme } from '@mui/material/styles';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -59,18 +59,18 @@ export const About = () => {
             <LinkedInIcon fontSize="large" />
           </IconButton>
         </Box>
-        {/* <Typography
+        <Typography
           sx={{
             width: '600px',
             textAlign: 'center',
           }}
         >
-          I am a Intermediate Software Engineer based in Vancouver, Canada. I hold a BASc in
-          Integrated Engineering from UBC and am a Certified ScrumMaster. Currently, I work at Ideon
+          I a Intermediate Software Engineer based in Vancouver, Canada. I hold a BASc in Integrated
+          Engineering from UBC and am a Certified ScrumMaster. Currently, I work at Ideon
           Technologies, where I develop full-stack features for cloud platforms and serve as
           ScrumMaster for a team of over 10 people.
         </Typography>
-        <Typography
+        {/* <Typography
           sx={{
             width: '600px',
             paddingTop: 1,
