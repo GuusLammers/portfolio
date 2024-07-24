@@ -65,23 +65,12 @@ export const About = () => {
             textAlign: 'center',
           }}
         >
-          I a Intermediate Software Engineer based in Vancouver, Canada. I hold a BASc in Integrated
-          Engineering from UBC and am a Certified ScrumMaster. Currently, I work at Ideon
-          Technologies, where I develop full-stack features for cloud platforms and serve as
-          ScrumMaster for a team of over 10 people.
+          I am an Intermediate Software Engineer based in Vancouver, Canada, with a BASc in
+          Integrated Engineering from UBC, majoring in Computer Engineering and minoring in
+          Mechanical Engineering. I am also a Certified ScrumMaster. At Ideon Technologies, I
+          develop full-stack features for cloud platforms and lead a team of over 10 people as
+          ScrumMaster.
         </Typography>
-        {/* <Typography
-          sx={{
-            width: '600px',
-            paddingTop: 1,
-            textAlign: 'center',
-          }}
-        >
-          In my free time, I enjoy staying active through swimming, biking, running, and disc
-          golfing. I also design TradingView indicators such as the GL Line Indicator and the GL
-          Gann Swing Indicator for crypto trading. Feel free to connect with me on LinkedIn and
-          explore my Portfolio and GitHub to see more of my work.
-        </Typography> */}
       </Stack>
     </Box>
   );
